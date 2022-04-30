@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "cwd": "pwd",
-    "setup": "npm install && npm run build && chmod +x $(pwd)/bin/release-timer && rm $(npm -g prefix)/bin/release-timer && ln -s $(pwd)/bin/release-timer $(npm -g prefix)/bin/release-timer",
+    "setup": "npm install && npm run build && chmod +x $(pwd)/bin/release-timer && rm -f $(npm -g prefix)/bin/release-timer && ln -s $(pwd)/bin/release-timer $(npm -g prefix)/bin/release-timer",
     "build": "tsc",
     "watch": "tsc -w"
   },
