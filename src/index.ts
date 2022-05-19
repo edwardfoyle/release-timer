@@ -13,7 +13,7 @@ program.name('release-timer').description('Small CLI utility to record start and
 
 const startHandler = () => {
   if (fs.existsSync(timestampLocation)) {
-    console.error('Release timer is already running. Stop the current timer by runnign `release-timer cancel` or record the current timer by running `release-timer stop`.');
+    console.error('Release timer is already running. Stop the current timer by running `release-timer cancel` or record the current timer by running `release-timer stop`.');
     return;
   }
   if (!fs.pathExistsSync(path.dirname(timestampLocation))) {
